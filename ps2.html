@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zap Gadgets: Ps5 </title>
+        
+        <style>
+   
+       /* Navbar Styling */
+       .navbar1 {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #1e2a3a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .navbar1:hover {
+            background-color: #2c3e50;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            width: 150px;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+            background-color: #3498db;
+            transform: translateY(-2px);
+        }
+
+        /* Dropdown Menu Styling */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: #ecf0f1;
+            font-size: 18px;
+            font-weight: 500;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .dropbtn:hover {
+            color: #3498db;
+            background-color: transparent;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #34495e;
+            min-width: 180px;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #ecf0f1;
+            padding: 12px 18px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #3498db;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 2px;
+            width: 250px;
+            border: none;
+            outline: none;
+            transition: width 0.4s ease-in-out;
+            background-color: #ecf0f1;
+        }
+
+        .search-bar:focus {
+            width: 350px;
+        }
+
+        .search-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background-color: #1f5071;
+        }
+
+        /* Right-side Navigation Items (Cart and Login) */
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 30px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-right a:hover {
+            color: #ffffff;
+            background-color: #3498db;
+            transform: translateY(-2px);
+        }
+
+        .cart-btn {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-icon {
+            margin-right: 8px;
+        }
+
+        .login-btn {
+            background-color: #2ecc71;
+            padding: 8px 15px;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #27ae60;
+        }
+
+  .mk{
+    display:flex;
+  }
+ 
+  .image-container {
+    width: 550px;
+    overflow:-moz-hidden-unscrollable;
+    border: px solid #ddd;
+    border-radius: 8px;
+    margin-bottom:3%;
+    padding-left:12%;
+    
+  }
+  
+ 
+  .image-container img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: -moz-zoom-out;
+  }
+  
+  
+  .image-container:hover img {
+    transform: scale(1.3); 
+    cursor: zoom-out;
+  }
+
+
+
+
+/* Product Title */
+.product-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+/* Price Styling */
+.product-price {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.new-price {
+  font-weight: bold;
+  color: #119039;
+}
+
+/* Features List */
+.product-features {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.product-features li {
+  margin-bottom: 5px;
+}
+
+/* Quantity Section */
+.product-quantity {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.qty-btn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 2px 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.product-quantity input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  display: block;
+  width: 100%;
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #396ff6;
+}
+
+
+.image-scroll-container {
+  width: 100%;
+  overflow-x:hidden; /* Enable horizontal scroll */
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
+  border: 2px solid #ffffff;
+  padding: 10px;
+}
+
+/* Image styling */
+.image-track img{
+  width: 300px;
+  height: 190px;
+  margin-right: 10px;
+  display: inline-block;
+  object-fit: cover;
+  background:rgb(0, 0, 0);
+}
+
+h3,h1,h2{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 0%;
+}
+.review-column {
+  width: 96%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(169, 168, 168);
+}
+
+.review-column h2 {
+  text-align:center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.review {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #000000;
+}
+
+.review:last-child {
+  border-bottom: none;
+}
+
+.review h3 {
+  margin: 0;
+  color: #555;
+}
+
+.rating {
+  color: #f39c12;
+  margin: 5px 0;
+}
+
+.review p {
+  margin: 5px 0;
+  color: #777;
+}
+.footer {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px 20px;
+    }
+    .footer .footer-heading {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .footer .footer-links a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .footer .contact-info {
+      font-size: 0.9rem;
+    }
+    .footer .row.align-items-center {
+      align-items: center;
+    }
+    .footer .expert-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer .expert-section img {
+      max-width: 280px;
+    }
+.footer .LOGOIMAGE img {
+      max-width: 100px;
+    }
+
+    .newsletter-box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #f8f9fa;
+    }
+    .newsletter-box .newsletter-description {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    .footer .shop-help {
+      margin-top: 40px;
+    }
+    .footer .shop-help .footer-column {
+      margin-bottom: 20px;
+    }
+    .footer .shop-help .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer .shop-help .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    .footer .shop-help .footer-column ul li a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer .shop-help .footer-column ul li a:hover {
+      text-decoration: underline;
+    }
+    .footer .shop-help img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    .footer h5 {
+      color: #333;
+      font-weight: bold;
+    }
+    .footer p {
+      color: #555;
+    }
+
+    .simple-footer {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: space-around;
+            background-color: #222;
+            color: #fff;
+            padding: 1px;
+            font-family: Arial, sans-serif;
+        }
+
+        .simple-footer p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+            transform: scale(1.2);
+        }
+        </style>
+    </head>
+<body>
+
+  <nav class="navbar1">
+    <div class="logo">
+        <img src="https://ik.imagekit.io/Nithish/FR/LOGO_creatathonADDScriew(1)(1).PNG?updatedAt=1735202373740" alt="Logo" class="logo-img">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li class="dropdown"><a href="/index.html" class="dropbtn">Shop</a></li>
+      <li><a href="/index.html">Offers</a></li>
+      <li><a href="/index.html">Contact</a></li>
+    </ul>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search for products..." class="search-bar">
+        <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="nav-right">
+        <a href="/cartd.html" class="cart-btn">
+            <span class="cart-icon">🛒</span> Add to Cart
+        </a>
+        <a href="/lo.html" class="login-btn">Login</a>
+    </div>
+</nav>
+
+    <div class="mk">
+                <div class="image-container">
+                <img src="https://ik.imagekit.io/iyeq20ng4/FR/ps2.png?updatedAt=1735202767674">
+                </div>
+            <div class="product-card">
+                <h1 class="product-title">Sony PlayStation®5 Console (slim)
+                </h1>
+                <p class="product-price">
+                    <span class="old-price">$1,749.00</span>
+                    <span class="new-price">$1,629.00</span>
+                </p>
+                <h3>Key features</h3>
+                <ul class="product-features">
+                    <li>Newest technology</li>
+                    <li>Best in class components</li>
+                    <li>Dimensions – 69.5 × 75.0 × 169.0</li>
+                    <li>Maintenance free</li>
+                    <li>12 years warranty</li>
+                </ul>
+                <div class="product-quantity">
+                    <button class="qty-btn">-</button>
+                    <input type="number" value="1" min="1">
+                    <button class="qty-btn">+</button> <button class="add-to-cart" style="margin-left: 15px;">Add to cart</button>
+                    </div>
+                <hr>
+                <h4 style="color: rgb(95, 91, 91);">Category: <b style="color: rgb(23, 122, 253);">Playstation</b></h4>
+            </div>
+    </div>
+
+    <div class="image-scroll-container">
+        <div class="image-track img">
+            <img style=" background:rgb(0, 0, 0);" src="https://ik.imagekit.io/iyeq20ng4/FR/Screenshot%202024-12-25%20201245.png?updatedAt=1735202784204">
+            <img src="https://ik.imagekit.io/iyeq20ng4/FR/Screenshot%202024-12-25%20201253.png?updatedAt=1735202784437">
+            <img src="https://ik.imagekit.io/iyeq20ng4/FR/Screenshot%202024-12-25%20201301.png?updatedAt=1735202784655">
+            <img src="https://ik.imagekit.io/iyeq20ng4/FR/Screenshot%202024-12-25%20201337.png?updatedAt=1735202784717" >
+        </div>
+    </div><br><br>
+    <hr>    
+    <h3>Description</h3><br>
+    <h1 style="color: rgb(45, 44, 44);">More about the products</h1>
+    <h4 style="font-weight: 80;color: rgb(0, 0, 0);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">With PS5, players get powerful gaming technology packed inside a sleek and compact console design. 1TB of Storage: Keep your favorite games ready and waiting for you to jump in and play with 1TB of SSD storage built in. Ultra-High Speed SSD: Maximize your play sessions with near instant load times for installed PS5 games.</h4>
+    <p style="font-weight: 80;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">The custom integration of the PS5 console's systems lets creators pull data from the SSD so quickly that they can design games in ways never before possible. Ray Tracing: Immerse yourself in worlds with a new level of realism as rays of light are individually simulated, creating true-to-life shadows and reflections in supported PS5 games. 4K-TV Gaming: Play your favorite PS5 games on your stunning 4K TV.</p>
+    <img src="https://ik.imagekit.io/iyeq20ng4/FR/Screenshot%202024-12-25%20201941.png?updatedAt=1735202785448" width="1500" height="600"><br>
+    <hr>
+    <h3 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">What is in the Box?</h3>
+    <ul><li>PlayStation®5 Digital Edition (slim)
+    </li></ul>
+    <hr>
+    
+    <h2>From the manufacturer</h2>
+    <img src="https://ik.imagekit.io/iyeq20ng4/FR/Screenshot%202024-12-25%20202016.png?updatedAt=1735202785345" width="1500" height="550"><br>
+
+    <section class="review-column">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h3>John Doe</h3>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>There is no doubt this product is among the best, but bought the product without discount. The product is now on sale which makes me upset but that’s fine. I got Nov 2024 manufactured</p>
+        </div>
+        <div class="review">
+            <h3>Jane Smith</h3>
+            <p class="rating">⭐⭐⭐⭐</p>
+            <p>Excellent product</p>
+        </div>
+        <div class="review">
+            <h3>Bob Johnson</h3>
+            <p class="rating">⭐⭐⭐</p>
+            <p>The PS5 is smooth af, graphics are amazing and its controller is also very good.</p>
+        </div>
+    </section>
+    
+    
+    <footer class="simple-footer">
+      <p>Copyright © 2024 ZAP GADGETS</p>
+      <div class="social-icons">
+        <a href="www.facebook.com" class="fa fa-facebook"></a>
+        <a href="www.instagram.com" class="fa fa-instagram"></a>
+        <a href="www.youtube.com" class="fa fa-youtube-play"></a>
+        <a href="www.twitter.com" class="fa fa-twitter"></a>
+      </div>
+  </footer>
+</body>
+
+</html>
